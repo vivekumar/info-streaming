@@ -1,0 +1,112 @@
+.stream {
+
+    &_box {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            left: 0;
+            right: 0;
+            background-image: linear-gradient(transparent, $black);
+            height: 50%;
+            border-radius: 10px;
+            transition: .3s;
+        }
+
+        &_imgStyle {
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            height: 200px;
+            margin-bottom: 15px;
+            // width: 360px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                // object-fit: cover;
+                transition: .8s;
+            }
+        }
+
+        &_contentStyle {
+            position: absolute;
+            padding: 25px;
+            bottom: -100%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: $white;
+            z-index: 9;
+            transition: .5s;
+
+            h3 {
+                font-size: 18px;
+            }
+
+            h4 {
+                font-size: 14px;
+            }
+
+            a {
+                display: inline-block;
+                color: $white;
+                background: $main;
+                padding: 6px 20px;
+                text-decoration: none;
+                border-radius: 25px;
+                font-size: 14px;
+                transition: .5s;
+
+                &:hover {
+                    color: $white;
+                    background: $blk;
+                }
+            }
+        }
+
+        &:hover {
+
+            &::after,
+            .stream_box_contentStyle {
+                bottom: 0;
+            }
+
+            .stream_box_imgStyle {
+                img {
+                    scale: 1.15;
+                }
+            }
+        }
+    }
+
+
+}
+
+.title {
+    position: relative;
+    margin-bottom: 30px;
+
+    padding: 10px;
+
+    h3 {
+        position: relative;
+        border-bottom: 1px solid $blk;
+        padding-bottom: 15px;
+        color: $blk;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            background: $blk;
+            height: 3px;
+            width: 75px;
+        }
+    }
+}

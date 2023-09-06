@@ -1,0 +1,36 @@
+.header {
+    background-color: $white;
+    padding: 15px;
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+
+        &-img {
+            width: 42px;
+            height: 42px;
+            border-radius: 100%;
+            border: 1px solid $blk;
+            overflow: hidden;
+            padding: 1px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        h3 {
+            font-size: 16px;
+            margin: 0;
+            color: $blk;
+        }
+    }
+}

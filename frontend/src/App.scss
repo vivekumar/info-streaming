@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+$main: #f28b00;
+$secd: #ffb653;
+$blk: #484848;
+$white: #fff;
+$black: #000;
+
+body {
+  background: linear-gradient(90deg, $main, $secd);
+  margin: 0;
+  padding: 0;
+
+  &,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Roboto Slab", serif;
+    color: $white
+  }
+
+  p {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    color: $white
+  }
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.d-none {
+  display: none;
+}
+
+@import './scss/login';
+@import './scss/startup';
+@import './scss/room';
+@import './scss/video';
+@import './scss/header';
